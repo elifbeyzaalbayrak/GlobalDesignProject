@@ -119,16 +119,17 @@ def ee():
                 for c in f[1:]:
                     for cc in c:
                         i.append((unicodedata.normalize("NFKD",cc).encode('ascii','ignore')))
-    #print(l4)
+    print(l4)
     nl=[]
     dersler=[]
     for x in range(0,len(l4),2):
         nl.append(tuple(l4[x][1:]+l4[x+1][1:]))
     print(nl)
-    for i in nl:
-        print i
-        for ii in range(0,len(i),2):
-            dersler.append((i[ii]+" "+i[ii+1]))
+    for i in range(len(nl)):
+        dersler.append(len(nl[i])*[])
+        #print nl[i]
+        for ii in range(0,len(nl[i]),2):
+            dersler[i].append((nl[i][ii]+" "+nl[i][ii+1]))
     print(dersler)
 
 def ie():
