@@ -86,15 +86,6 @@ def cs():
 :return:
 '''
 def ee():
-    #html=parse("http://ee.sehir.edu.tr/Pages/Programlar/Lisans/Mufredat.aspx?PageID=831&MenuID=839")
-    ##print(etree.tostring(html, pretty_print=True))
-    #rows=html.xpath("//*[@id='ctl00_PlaceHolderMain_ctl01_ctl01__ControlWrapper_RichHtmlField']/div/table")
-    #l=[]
-    #for row in rows:
-    #    l.append([c.text_content() for c in row.getchildren()])
-    #for i in l:
-    #    for ii in i:print ii
-
     l=[]
     e=["FRESHMAN YEAR","SOPHOMORE YEAR","JUNIOR YEAR","SENIOR YEAR","COURSE CODE","COURSE NAME","T","P","L","CR","ECTS","PRE-REQ.","PRE- REQ.","NONE","TOTAL","(non-credit)"]
     s=[["VIII. SEMESTER",""],["VII. SEMESTER",""],["VI. SEMESTER",""],["V. SEMESTER",""],["IV. SEMESTER",""],["III. SEMESTER",""],["II. SEMESTER",""],['I. SEMESTER', '']]
@@ -119,18 +110,22 @@ def ee():
                 for c in f[1:]:
                     for cc in c:
                         i.append((unicodedata.normalize("NFKD",cc).encode('ascii','ignore')))
-    print(l4)
+    #print(l4)
     nl=[]
     dersler=[]
     for x in range(0,len(l4),2):
         nl.append(tuple(l4[x][1:]+l4[x+1][1:]))
-    print(nl)
+    #print(nl)
     for i in range(len(nl)):
         dersler.append(len(nl[i])*[])
-        #print nl[i]
         for ii in range(0,len(nl[i]),2):
             dersler[i].append((nl[i][ii]+" "+nl[i][ii+1]))
     print(dersler)
+    dersler[1]=dersler[1]+[" "," "]
+    dersler[2]=dersler[2]+[" "," "]
+    dersler[3]=dersler[3]+[" "," "," "," "," "]
+    #for f in dersler: print len(f),f
+    return dersler
 
 def ie():
     html=urllib2.urlopen("http://ie.sehir.edu.tr/lisans/").read()
@@ -145,7 +140,7 @@ def ie():
     for i in l:print i
 
 cs=cs()
-ee()
+ee=ee()
 
 
 
@@ -164,10 +159,10 @@ ie deneme
     #    print(row)
     #print datasets
 '''
-#db=sqlite3.connect("programcs.db")
-#im=db.cursor()
-#im.execute("""CREATE TABLE ee(c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,c13,c14)""")
-#im.executemany("""INSERT INTO ee VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)""", ee)
-#db.commit()
-#data=im.fetchall()
-#print data
+db=sqlite3.connect("programcs.db")
+im=db.cursor()
+im.execute("""CREATE TABLE ee(c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,c13,c14,c15)""")
+im.executemany("""INSERT INTO ee VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""", ee)
+db.commit()
+data=im.fetchall()
+print data
