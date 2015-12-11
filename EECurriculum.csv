@@ -1,0 +1,178 @@
+FRESHMAN YEAR,,,,,,,
+I. SEMESTER,,,,,,,
+COURSE CODE,COURSE NAME,T,P,L,CR,ECTS,PRE-REQ.
+UNI 111,Critical Reading and Writing in Turkish I,3,0,0,3,5,NONE
+UNI xxx,Core Course Elective I,3,0,0,3,5,NONE
+LIFE 101,Life Sciences I - Chemistry,3,0,0,3,5,NONE
+MATH 103,Calculus I - Differential,3,2,0,4,6,NONE
+PHYS 103,Physics I - Mechanics and Dynamics,3,2,0,4,6,NONE
+PHYS 103L,Physics I - Lab,0,2,0,1,1,NONE
+ENGR 105,Introduction to Engineering,(non-credit),,,,2,NONE
+TOTAL,,,,,18,30,
+II. SEMESTER,,,,,,,
+COURSE CODE,COURSE NAME,T,P,L,CR,ECTS,PRE- REQ.
+UNI 112,Critical Reading and Writing in Turkish II,3,0,0,3,5,NONE
+UNI xxx,Core Course Elective II,3,0,0,3,5,NONE
+LIFE 102,Life Sciences II - Biology,3,0,0,3,5,NONE
+MATH 104,Calculus II - Integral,3,2,0,4,6,MATH 103
+PHYS 104,Physics II - Electromagnetics and Modern Physics,3,2,0,4,6,NONE
+PHYS 104L,Physics II Lab,0,2,0,1,1,NONE
+ENGR 100,Computer Skills,(non-credit),,,,2,NONE
+TOTAL,,,,,18,30,
+UNI 100,Exploring Istanbul,3,0,0,3,5,NONE
+,,,,,,,
+SOPHOMORE YEAR,,,,,,,
+III. SEMESTER,,,,,,,
+COURSE CODE,COURSE NAME,T,P,L,CR,ECTS,PRE-REQ.
+ENGR 211,Introduction to Programming,2,2,0,3,5,NONE
+MATH 205,Linear Algebra,3,0,0,3,5,NONE
+MATH 206,Differential Equations and Complex Analysis,3,0,0,3,4,NONE
+EECS 201,System Design Fundamentals,3,2,0,4,6,NONE
+EECS 241,Discrete Mathematics,3,0,0,3,4,NONE
+UNI xxx,Core Course Elective III,3,0,0,3,5,NONE
+TOTAL,,,,,19,29,
+IV. SEMESTER,,,,,,,
+COURSE CODE,COURSE NAME,T,P,L,CR,ECTS,PRE- REQ.
+ENGR 212,Programming Practice,2,2,0,3,5,NONE
+ENGR 251,Probability for Engineers,2,2,0,3,5,NONE
+EECS 202,Basic Digital Communication with Networking,3,2,0,4,6,NONE
+EECS 218,Digital Logic Design,3,0,0,3,5,NONE
+EECS 216,Signals and Systems,2,2,0,3,5,NONE
+UNI xxx,Core Course Elective IV,3,0,0,3,5,NONE
+TOTAL,,,,,19,31,
+EE 200,Summer Practice (25 work days),(non-credit),,,,5,
+,,,,,,,
+,,,,,,,
+JUNIOR YEAR,,,,,,,
+V. SEMESTER,,,,,,,
+COURSE CODE,COURSE NAME,T,P,L,CR,ECTS,PRE-REQ.
+UNI 123,Textual Analysis and Effective Communication,3,0,0,3,5,NONE
+EE 301,Circuit Analysis,3,2,0,4,5,NONE
+EE 311,Introduction to Electronic Devices,3,0,0,3,5,NONE
+EE 312,Introduction to Communication Systems,3,0,0,3,5,NONE
+EE 324,Control Systems,3,0,0,3,5,NONE
+xxx,College Elective I,3,0,0,3,5,NONE
+TOTAL,,,,,19,30,
+VI. SEMESTER,,,,,,,
+COURSE CODE,COURSE NAME,T,P,L,CR,ECTS,PRE- REQ.
+UNI 124,Textual Analysis and Academic Writing,3,0,0,3,5,UNI 123
+EE 302,Microelectronic Circuit Design,3,2,0,4,5,NONE
+EE 321,Electromagnetics,3,0,0,3,5,NONE
+EE 332,Microprocessors,3,2,0,4,5,NONE
+IE 451,Project Management,3,0,0,3,5,NONE
+UNI xxx,Core Course Elective V,3,0,0,3,5,NONE
+TOTAL,,,,,20,30,
+EE 300,Summer Practice (25 work days),(non-credit),,,,5,
+,,,,,,,
+,,,,,,,
+SENIOR YEAR,,,,,,,
+VII. SEMESTER,,,,,,,
+COURSE CODE,COURSE NAME,T,P,L,CR,ECTS,PRE-REQ.
+ENGR 497,Global Design Project I,1,2,0,2,10,NONE
+EECS xxx,Departmental Elective I,2,2,0,3,5,NONE
+EECS xxx,Departmental Elective II,3,0,0,3,5,NONE
+EECS xxx,Departmental Elective III,3,0,0,3,5,NONE
+UNI 201,Formations of Modern Turkey I,3,0,0,3,5,NONE
+TOTAL,,,,,14,30,
+VIII. SEMESTER,,,,,,,
+COURSE CODE,COURSE NAME,T,P,L,CR,ECTS,PRE- REQ.
+ENGR 498,Global Design Project II,1,2,0,2,10,NONE
+EECS xxx,Departmental Elective IV,2,2,0,3,5,NONE
+EECS xxx,Departmental Elective V,3,0,0,3,5,NONE
+EECS xxx,Departmental Elective VI,3,0,0,3,5,NONE
+UNI 202,Formations of Modern Turkey II,3,0,0,3,5,NONE
+TOTAL,,,,,14,30,
+EECS TRACKS and DEPARTMENTAL ELECTIVES,,,,,,,
+COMPUTER SYSTEMS,,,,,,,
+COURSE CODE,COURSE NAME,T,P,L,CR,ECTS,PRE-REQ.
+EECS 451,Database Systems,3,0,0,3,5,NONE
+EECS 456,Principles of Computer Systems,3,0,0,3,5,NONE
+EECS 457,Performance Engineering of Software Systems,3,0,0,3,5,NONE
+EECS 464,Computer Vision,3,0,0,3,5,NONE
+EECS 482,Cryptographic Engineering,3,0,0,3,5,NONE
+EECS 483,Network Security,3,0,0,3,5,NONE
+EECS 420,Software Based Startups,3,0,0,3,5,NONE
+EECS 428,Data Visualization,3,0,0,3,5,NONE
+EECS 429,Multimedia,3,0,0,3,5,NONE
+EECS 432,Mobile Programming,3,0,0,3,5,NONE
+EECS 466,Enterprise Software Development,3,0,0,3,5,NONE
+EECS 475,Computer Networks,3,0,0,3,5,NONE
+THEORY and ALGORITHMS,,,,,,,
+COURSE CODE,COURSE NAME,T,P,L,CR,ECTS,PRE-REQ.
+EECS 471,Distributed Algorithms,3,0,0,3,5,NONE
+EECS 474,Networks,3,0,0,3,5,NONE
+EECS 481,Cryptography,3,0,0,3,5,NONE
+EECS 461,Machine Learning,3,0,0,3,5,NONE
+EECS 418,Information Theory,3,0,0,3,5,NONE
+EECS 468,Bioinformatics,3,0,0,3,5,NONE
+EECS 462,"Automata Theory, Languages and Computation",3,0,0,3,5,NONE
+DEVICES,,,,,,,
+COURSE CODE,COURSE NAME,T,P,L,CR,ECTS,PRE-REQ.
+EECS 403,Digital Circuit Design,3,0,0,3,5,NONE
+EECS 404,Communication Circuits,3,0,0,3,5,NONE
+EECS 405,RF Circuit Design,3,0,0,3,5,NONE
+EECS 407,Advanced Integrated Analog Circuit Design,3,0,0,3,5,NONE
+EECS 422,Wave Propagation and Antennas,3,0,0,3,5,NONE
+EECS 423,Optics,3,0,0,3,5,NONE
+EECS 424,Photonics and Lasers,3,0,0,3,5,NONE
+EECS 441,Nano and Micro Electro Mechanical Systems,3,0,0,3,5,NONE
+EE SYSTEMS,,,,,,,
+COURSE CODE,COURSE NAME,T,P,L,CR,ECTS,PRE-REQ.
+EECS 413,Wireless Communications,3,0,0,3,5,NONE
+EECS 415,Digital Signal Processing,3,0,0,3,5,NONE
+EECS 416,Image and Video Processing,3,0,0,3,5,NONE
+EECS 465,Introduction to Robotics,3,0,0,3,5,NONE
+OTHER DEPARTMENTAL or COLLEGE ELECTIVES,,,,,,,
+COURSE CODE,COURSE NAME,T,P,L,CR,ECTS,PRE-REQ.
+EECS 402,Entrepreneurship,3,0,0,3,5,NONE
+ENGR 422,Numerical Methods,3,0,0,3,5,NONE
+?,,,,,,,
+"Other college / departmental elective courses, including courses from graduate programns may be taken with the consent of the academic advisor.",,,,,,,
+,,,,,,,
+"ECE and BGM coded graduate courses will be taken as departmental, ISE coded graduate courses will be taken as college electives.",,,,,,,
+,,,,,,,
+CORE COURSES ELECTIVES,,,,,,,
+COURSE CODE,COURSE NAME,T,P,L,CR,ECTS,PRE-REQ.
+UNI 117,Understanding Society and Culture,3,0,0,3,5,None
+UNI 221,World Civilizations and Global Encounters: Until 1300 CE,3,0,0,3,5,None
+UNI 102,Critical Thinking,3,0,0,3,5,None
+UNI 118,Understanding Politics and Economy,3,0,0,3,5,None
+UNI 222,World Civilizations and Global Encounters: Since 1300 CE,3,0,0,3,5,None
+UNI 205,Understanding Science and Environment,3,0,0,3,5,None
+UNI 209,Understanding Cultural Encounters,3,0,0,3,5,None
+UNI 211,Understanding Art and Architecture,3,0,0,3,5,None
+Other UNI courses may be taken with the consent of the academic advisor and approval of the College Administrative Board.,,,,,,,
+,,,,,,,
+NOTES:,,,,,,,
+T (Theorical) P (Practical) L (Laboratory) Cr (Credit) ECTS (European Credit Transfer System Credit),,,,,,,
+"For International Students, instead of UNI 111 and UNI 112, two of UNI 115, 116, 215, 216, 315, 316 courses will be given.",,,,,,,
+General Electives:�All the Courses offered within the university excluding the courses offered by the college.,,,,,,,
+Departmental Electives:�Courses offered by the department with its own code,,,,,,,
+College Electives:�All the Courses offered within the college excluding the courses offered by the department,,,,,,,
+,,,,,,,
+Total Credits Required for Graduation: 144,,,,,,,
+No. of Courses: 49,,,,,,,
+Average Credit Load Per Semester: 18,,,,,,,
+Total Credits of Electives: 36,,,,,,,
+Elective Ratio: 25%,,,,,,,
+,,,,,,,
+6 Departmental Electives from the tracks defined below with the approval of the academic advisor. (At least 3 must be from the same track.),,,,,,,
+1 College Elective course to be taken from junior or senior level courses from other CENS departments (or other colleges and schools) with the approval of the academic advisor.,,,,,,,
+5 Core Course (Humanities) Elective courses are taken from the pool of Core Curriculum listed above.,,,,,,,
+College and General Elective courses may replace each other with the consent of the academic advisor.,,,,,,,
+,,,,,,,
+This new curriculum will be implemented for the new freshman students who entered the College in the year 2014.,,,,,,,
+,,,,,,,
+Total credit required for graduation is 140.,,,,,,,
+,,,,,,,
+ENGR 100 is not compulsory.,,,,,,,
+,,,,,,,
+EECS 218 is compulsory for the students who did not take EE 331 before.,,,,,,,
+,,,,,,,
+"MATH 206 is not compulsory, a college or general elective will be replaced for that.",,,,,,,
+,,,,,,,
+IE 451 is compulsoy for the students who started their undergraduate studies in and after the academic year of 2013-2014.,,,,,,,
+,,,,,,,
+"For the others, a college or general elective will be replaced for that.",,,,,,,
+,,,,,,,
+EECS 214 which is removed from the curriculum will be replaced for a college elective.,,,,,,,
