@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/h1.css">
+    <title>GlobalDesignProject</title>
+</head>
+<body>
+{% block content %}
+<p>Courses</p>
+<div class="sec">
+<form action=""  method="POST">
+    <ul>
+        <li>
+            <label for="tur">Choose item</label>
+                <select name="bolum" id="tur" style="font-size:15px">
+                    <option value="All">Departments</option>
+                    {% for bolum in bolumler %}
+                        <option value="{{ bolum }}">{{ bolum }}</option>
+                    {% endfor %}
+                </select>
+        </li>
+        <input type="submit" id="goster" class="goster" value="Show" style="font-size:20px; color:  #2f0b18">
+    </ul>
+</form>
+</div>
+<div class="menu">
+</div>
+</body>
+{% endblock %}
+</html>

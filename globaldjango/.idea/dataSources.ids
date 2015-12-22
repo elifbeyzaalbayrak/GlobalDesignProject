@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="example" uuid="fab26be6-87a1-4760-9244-69c4c1161ea1">
+    <database-info product="SQLite" version="3.8.9" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native"/>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
+    <schema name="" catalog=""/>
+    <table name="cs" schema="" catalog="" type="TABLE">
+      <column name="bolum" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="year" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="ccode" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="course" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="T" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="P" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="L" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="CR" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="EECTS" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="PRQ" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+    </table>
+    <table name="ee" schema="" catalog="" type="TABLE">
+      <column name="year" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="ccode" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="course" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="T" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="P" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="L" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="CR" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="EECTS" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="PRQ" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+    </table>
+    <table name="ie" schema="" catalog="" type="TABLE">
+      <column name="bolum" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="year" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="ccode" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="course" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="T" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="P" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="L" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="CR" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="EECTS" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="pr" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+    </table>
+  </data-source>
+  <data-source name="program2" uuid="133bf043-86f5-4da9-827a-b587f0ae8b2e">
+    <database-info product="SQLite" version="3.8.9" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native"/>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
+    <schema name="" catalog=""/>
+    <table name="sehir" schema="" catalog="" type="TABLE">
+      <column name="ccode" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="cname" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="days" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="time" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="room" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="fmember" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+    </table>
+  </data-source>
+</component>
