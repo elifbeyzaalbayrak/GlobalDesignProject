@@ -13,25 +13,6 @@ p{
     font-style: normal ;
     font-size: 14px;
 }
-.menu{
-    text-align: center;
-    position: relative;
-    top:300px
-}
-.menu li{
-    display: inline;
-    padding-right: 10px;
-}
-.menu ul a{
-    text-decoration: none;
-    color: #2f0b18;
-    font-size: 14px;
-}
-
-.menu a:hover{
-    font-size:14px;
-    color: #7c1849;
-}
 
 .sec{
     text-align: center;
@@ -49,4 +30,33 @@ button{
 
 .scroll_checkboxes {
     border:2px solid #ccc; width:600px; height: 120px; margin: auto; overflow-y: scroll;
+}
+
+.sonuclar p{
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    margin: -30px;
+}
+
+.new li{
+    margin: 20px;
+    list-style: none;
+    padding-left: 590px;
+}
+
+.p1 p{
+    padding-left: 40px;
+    padding-top: 250px;
+}
+
+.base{
+    padding-top: -250px;
+}
+
+.se li{
+    padding-top: -50px;
+    list-style: none;
+    padding-left: 550px;
 }

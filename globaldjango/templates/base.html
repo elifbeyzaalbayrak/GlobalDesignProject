@@ -7,10 +7,10 @@
 </head>
 <body>
 {% block content %}
-<p>Courses</p>
-<div class="sec">
+    <div class="p1"><p>Courses</p></div>
+<div>
 <form action=""  method="POST">
-    <ul>
+    <ul class="se">
         <li>
             <label for="tur">Choose item</label>
                 <select name="bolum" id="tur" style="font-size:15px">
@@ -20,11 +20,11 @@
                     {% endfor %}
                 </select>
         </li>
-        <input type="submit" id="goster" class="goster" value="Show" style="font-size:20px; color:  #2f0b18">
+    </ul>
+    <ul class="new">
+        <li><input type="submit" id="goster" class="goster" value="Show" style="font-size:20px; color:  #2f0b18"></li>
     </ul>
 </form>
-</div>
-<div class="menu">
 </div>
 </body>
 {% endblock %}

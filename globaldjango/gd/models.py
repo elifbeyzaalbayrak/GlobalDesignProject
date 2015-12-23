@@ -5,15 +5,22 @@ from django import forms
 import sqlite3
 from django.core.files import File
 
+
 def derslerbolum():
     d=[]
-    conn=sqlite3.connect("example.db")
+    conn=sqlite3.connect("deneme.db")
     cs=conn.cursor()
     cs.execute("""SELECT * FROM cs""")
     verics=cs.fetchall()
     for items in verics:
         if items[0:4] not in d:
             d.append(items[0:4])
+    ee=conn.cursor()
+    ee.execute(""" SELECT * FROM ee """)
+    veriee=ee.fetchall()
+    for itemse in veriee:
+        if itemse[0:4] not in d:
+            d.append(itemse[0:4])
     ie=conn.cursor()
     ie.execute(""" SELECT * FROM ie """)
     veriie=ie.fetchall()
@@ -24,13 +31,19 @@ def derslerbolum():
 
 d=[]
 def dersler():
-    conn=sqlite3.connect("example.db")
+    conn=sqlite3.connect("deneme.db")
     cs=conn.cursor()
     cs.execute("""SELECT * FROM cs""")
     verics=cs.fetchall()
     for items in verics:
         if items[2:4] not in d:
             d.append(items[2:4])
+    ee=conn.cursor()
+    ee.execute(""" SELECT * FROM ee """)
+    veriee=ee.fetchall()
+    for itemse in veriee:
+        if itemse[2:4] not in d:
+            d.append(itemse[2:4])
     ie=conn.cursor()
     ie.execute(""" SELECT * FROM ie """)
     veriie=ie.fetchall()
@@ -44,15 +57,22 @@ class CountryForm(forms.Form):
         Countries = forms.MultipleChoiceField(widget=forms.CheckboxSelectMultiple,
                                              choices=OPTIONS)
 
+#bolumleri secmek icin
 def db():
     empty=[]
-    conn=sqlite3.connect("example.db")
+    conn=sqlite3.connect("deneme.db")
     cs=conn.cursor()
     cs.execute("""SELECT * FROM cs""")
     verics=cs.fetchall()
     for items in verics:
         if items[0] not in empty:
             empty.append(items[0])
+    ee=conn.cursor()
+    ee.execute(""" SELECT * FROM ee """)
+    veriee=ee.fetchall()
+    for itemse in veriee:
+        if itemse[0] not in empty:
+            empty.append(itemse[0])
     ie=conn.cursor()
     ie.execute(""" SELECT * FROM ie """)
     veriie=ie.fetchall()

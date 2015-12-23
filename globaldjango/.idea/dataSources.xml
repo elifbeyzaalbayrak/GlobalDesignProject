@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3359037561">
+  <component name="DataSourceManagerImpl" format="xml" hash="1415871484">
     <data-source source="LOCAL" name="example" uuid="fab26be6-87a1-4760-9244-69c4c1161ea1">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
@@ -20,13 +20,13 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="program2" uuid="133bf043-86f5-4da9-827a-b587f0ae8b2e">
+    <data-source source="LOCAL" name="deneme" uuid="26035737-330a-4123-9d5c-f69055b1e4d0">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
       <remarks>SQLite</remarks>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/program2.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/deneme.db</jdbc-url>
       <libraries>
         <library>
           <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/sqlite-jdbc-3.8.9.jar</url>

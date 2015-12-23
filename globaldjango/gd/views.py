@@ -16,21 +16,15 @@ from django.views.generic import View
 @csrf_exempt
 def mys(request):
     if request.method == "POST":
-
         r0=request.POST.getlist("items[]")
-
-        data=[]
-
-        conn=sqlite3.connect("program2.db")
+        #print(r0[0][3:5])
+        a=(unicodedata.normalize("NFKD",(r0[0][3:5])).encode('ascii','ignore')).lower()
+        #print(a)
+        conn=sqlite3.connect("deneme.db")
         s=conn.cursor()
-        s.execute("""SELECT * FROM sehir""")
+        s.execute("SELECT sehir.ccode,sehir.cname,sehir.days,sehir.time,sehir.room,sehir.fmember FROM sehir INNER JOIN (%s) ON sehir.cname=course" %(a))
         sehir=s.fetchall()
-        for items in sehir:
-            for items2 in r0:
-                if items2[0] not in items[0] and items2[1] not in items[1]:
-                    if items not in data:
-                        data.append(items)
-        return render_to_response("h3.html",{"ii":data})
+        return render_to_response("h3.html",{"ii":sehir})
 
 
 @csrf_exempt
@@ -46,10 +40,9 @@ def mysearch(request):
         searchbolum = request.POST.get("bolum")
         for i in v:
             if searchbolum==i[0]:
-                l.append(i[2:4])
+                #l.append(i[2:4])
+                l.append(i[0:4])
         return render_to_response("yeni.html",{"bb":l}, context_instance=RequestContext(request))
-
-
 
 
 categories = Category.objects.filter()

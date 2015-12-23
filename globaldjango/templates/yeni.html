@@ -13,14 +13,12 @@
     <label for="cc">Choose already taken courses</label>
         <li class="scroll_checkboxes">
                 {% for b in bb %}
-                    <input type="checkbox" name="items[]" id="cc" value="{{ b }}"/> {% for i in b|slice:"0:1" %} {{ i }} {% endfor %}{% for i in b|slice:"1:2" %} {{ i }} {% endfor %}<br/>
+                    <input type="checkbox" name="items[]" id="cc" value="{{ b }}"/> {% for i in b|slice:"2:3" %} {{ i }} {% endfor %}{% for i in b|slice:"3:4" %} {{ i }} {% endfor %}<br/>
                 {% endfor %}
         </li>
             <input type="submit" id="goster" class="goster" value="Show" style="font-size:20px; color:  #2f0b18">
     </ul>
 </form>
-</div>
-<div class="menu">
 </div>
 </body>
 </html>
