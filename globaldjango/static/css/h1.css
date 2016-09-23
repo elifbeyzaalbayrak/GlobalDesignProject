@@ -2,9 +2,9 @@ body{
     font-family:'Century Gothic';
     font-size: 14px;
     margin:auto;
-    background: rgba(182, 182, 182, 0.45);
+    background: rgba(251, 251, 251, 0.45);
     position: relative;
-    color: #501327;
+    color: #951a5c;
 }
 
 p{
@@ -12,6 +12,10 @@ p{
     padding-top: 50px;
     font-style: normal ;
     font-size: 14px;
+}
+
+p.hidden{
+    display:none;
 }
 
 .sec{
@@ -26,6 +30,11 @@ p{
 
 button{
    font-size: 50px;
+}
+
+.sc{
+    border:2px solid #ccc; width:1100px; height: 320px; margin: auto; overflow-y: scroll;
+    font-size: 12px;
 }
 
 .scroll_checkboxes {
@@ -43,11 +52,10 @@ button{
 .new li{
     margin: 20px;
     list-style: none;
-    padding-left: 590px;
+    padding-left: 550px;
 }
 
 .p1 p{
-    padding-left: 40px;
     padding-top: 250px;
 }
 
@@ -58,5 +66,20 @@ button{
 .se li{
     padding-top: -50px;
     list-style: none;
-    padding-left: 550px;
+    padding-left: 500px;
 }
+
+.sonuclar #goster{
+    margin-left: 550px;
+}
+
+#goster0{
+    margin-left: -80px;
+}
+#upll{
+    margin-left: -50px;
+}
+th,td {  margin: 0;  text-align: center;  border-collapse: collapse;  outline: 1px solid #7c1849;  }
+td {  padding: 5px 10px;  }
+th { background: #add8e6;  color: #7c1849;  padding: 5px 10px;  }
+td:hover {  cursor: pointer;  background: #7f7a81;  color: white;  }

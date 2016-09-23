@@ -1,18 +1,37 @@
-{% extends "yeni.html" %}
 <html>
 <head>
     <meta charset="UTF-8">
+    <script type="text/javascript" src="/static/d3/d3.js" charset="utf-8"></script>
     <link rel="stylesheet" href="/static/css/h1.css">
     <title>GlobalDesignProject</title>
 </head>
 <body>
 {% block content %}
+<div class="h3">
     <p> RESULTS </p>
     <div class="sonuclar">
+    <form action="result" method="POST">
+    <ul>
+    <label for="sec">Choose courses</label>
+    <li class="sc">
     {% for b in ii %}
-        <p > {% for i in b|slice:"0:1" %} {{ i }} {% endfor %}{% for i in b|slice:"1:2" %} {{ i }} {% endfor %}{% for i in b|slice:"2:3" %} {{ i }} {% endfor %}{% for i in b|slice:"3:4" %} {{ i }} {% endfor %}{% for i in b|slice:"4:5" %} {{ i }} {% endfor %}{% for i in b|slice:"5:6" %} {{ i }} {% endfor %} </p>
+        <input type="checkbox" name="item[]" id="sec" value="{{ b }}"/>
+        {% for i in b|slice:"0:1" %} {{ i }} {% endfor %}{% for i in b|slice:"1:2" %} {{ i }} {% endfor %}
+            {% for i in b|slice:"2:3" %} {{ i }} {% endfor %}{% for i in b|slice:"3:4" %} {{ i }} {% endfor %}
+            {% for i in b|slice:"4:5" %} {{ i }} {% endfor %}{% for i in b|slice:"5:6" %} {{ i }} {% endfor %}
+        <br/>
     {% endfor %}
+    </li>
+        <input type="submit" id="goster" class="goster" value="Show" style="font-size:20px; color:  #2f0b18">
+    </ul>
+    </form>
     </div>
+    {% for x in y %}
+    <p> {{ x }}</p>
+{% endfor %}
+
+    </div>
+
 </body>
 </html>
 {% endblock %}

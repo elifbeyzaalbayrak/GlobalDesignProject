@@ -1,0 +1,345 @@
+{% extends "h3.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="http://d3js.org/d3.v3.js" charset="utf-8"></script>
+    <title>Title</title>
+
+</head>
+<body>
+{% block content %}
+{% for x in y %}
+    <p class="hidden"> {{ x }}</p>
+{% endfor %}
+<div class="tablo" id="tablo">
+        <table width="80%" align="center" >
+            <div id="head_nav">
+                <tr>
+                    <th>Time</th>
+                    <th id="Monday">Monday</th>
+                    <th id="Tuesday">Tuesday</th>
+                    <th id="Wednesday">Wednesday</th>
+                    <th id="Thursday">Thrusday</th>
+                    <th id="Friday">Friday</th>
+                </tr>
+            </div>
+            <tr class="row_2">
+                <th id=09>09:00-10:00</th>
+                <td id="m_9"></td>
+                <td id="t_9"></td>
+                <td id="w_9"></td>
+                <td id="th_9"></td>
+                <td id="f_9"></td>
+            </tr>
+
+            <tr class="row_3">
+                <th id=10>10:00 - 11:00</th>
+                <td id="m_10"></td>
+                <td id="t_10"></td>
+                <td id="w_10"></td>
+                <td id="th_10"></td>
+                <td id="f_10"></td>
+            </tr>
+
+            <tr  class="row_4">
+                <th>11:00 - 12:00</th>
+                    <td id="m_11"></td>
+                    <td id="t_11"></td>
+                    <td id="w_11"></td>
+                    <td id="th_11"></td>
+                    <td id="f_11"></td>
+            </tr>
+
+            <tr  class="row_5">
+                <th>12:00 - 13:00</th>
+                    <td id="m_12"></td>
+                    <td id="t_12"></td>
+                    <td id="w_12"></td>
+                    <td id="th_12"></td>
+                    <td id="f_12"></td>
+            </tr>
+
+            <tr  class="row_6">
+                <th>13:00 - 14:00</th>
+                    <td id="m_13"></td>
+                    <td id="t_13"></td>
+                    <td id="w_13"></td>
+                    <td id="th_13"></td>
+                    <td id="f_13"></td>
+            </tr>
+
+            <tr  class="row_7">
+                <th>14:00 - 15:00</th>
+                    <td id="m_14"></td>
+                    <td id="t_14"></td>
+                    <td id="w_14"></td>
+                    <td id="th_14"></td>
+                    <td id="f_14"></td>
+            </tr>
+
+            <tr  class="row_8">
+                <th>15:00-16:00</th>
+                <td id="m_15"></td>
+                <td id="t_15"></td>
+                <td id="w_15"></td>
+                <td id="th_15"></td>
+                <td id="f_15"></td>
+
+            <tr  class="row_9">
+                <th>16:00-17:00</th>
+                <td id="m_16"></td>
+                <td id="t_16"></td>
+                <td id="w_16"></td>
+                <td id="th_16"></td>
+                <td id="f_16"></td>
+            </tr>
+
+            <tr  class="row_10">
+                <th>17:00-18:00</th>
+                <td id="m_17"></td>
+                <td id="t_17"></td>
+                <td id="w_17"></td>
+                <td id="th_17"></td>
+                <td id="f_17"></td>
+
+            <tr  class="row_11">
+                <th>18:00-19:00</th>
+                <td id="m_18"></td>
+                <td id="t_18"></td>
+                <td id="w_18"></td>
+                <td id="th_18"></td>
+                <td id="f_18"></td>
+        </table>
+    </div>
+
+<script type="text/javascript">
+        //var liste=d3.selectAll(p.hidden);
+        //for(i=0; i<liste.length; i++){
+        //    console.log(liste[i][0].innerHeight)
+        //}
+        var liste=[];
+        var liste2=[];
+        console.log(d3.selectAll("p.hidden")[0]);
+        var sec=d3.selectAll("p.hidden")[0];
+        for(i=0; i<sec.length; i++){
+            console.log(sec[i].innerHTML);
+            liste.push(sec[i].innerHTML);
+        }
+        for (a=0;a<liste.length;a++){
+        liste2.push(liste[a].split("(")[1].split(", ").slice(0,4))}
+        console.log(liste2);
+
+
+        var lst=[["CS 351","Monday Wednesday","11:00-13:00 11:00-12:00"]];
+        for (ii=0; ii<liste2.length; ii++){
+            console.log(liste2[ii][0].split("'")[1]);
+            if(liste2[ii][2] == "u'Monday Wednesday'"){
+                if(liste2[ii][3]=="u'11:00-13:00 11:00-12:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_4").select("td#m_11").append("text").text(liste2[ii][0].split("'")[1]+"");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_4").select("td#w_11").append("text").text(liste2[ii][0].split("'")[1]+"");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_5").select("td#m_12").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+                if(liste2[ii][3]=="u'11:00-12:00 10:00-12:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_3").select("td#w_10").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_4").select("td#w_11").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_4").select("td#m_11").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+                if(liste2[ii][3]=="u'12:00-14:00 13:00-14:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_5").select("td#m_12").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_6").select("td#w_13").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_6").select("td#m_13").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+                if(liste2[ii][3]=="u'15:00-17:00 14:00-15:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_8").select("td#m_15").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_9").select("td#w_16").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_7").select("td#w_14").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+                if(liste2[ii][3]=="u'15:00-17:00 15:00-16:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_8").select("td#m_15").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_9").select("td#m_16").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_8").select("td#w_15").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+                if(liste2[ii][3]=="u'17:00-19:00 18:00-19:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_10").select("td#m_17").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_11").select("td#m_18").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_11").select("td#w_18").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+                if(liste2[ii][3]=="u'16:00-17:00 16:00-18:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_9").select("td#m_16").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_9").select("td#w_16").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_10").select("td#w_17").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+                if(liste2[ii][3]=="u'14:00-16:00 15:00-16:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_7").select("td#m_14").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_8").select("td#m_15").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_8").select("td#w_15").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+                if(liste2[ii][3]=="u'09:00-11:00 09:00-10:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_2").select("td#m_9").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_3").select("td#m_10_").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_2").select("td#w_9").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+                if(liste2[ii][3]=="u'13:00-14:00 13:00-15:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_6").select("td#m_13").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_6").select("td#w_13").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_7").select("td#m_14").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+            }
+
+            if(liste2[ii][2] == "u'Tuesday Thursday'"){
+                if(liste2[ii][3]=="u'11:00-13:00 11:00-12:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_4").select("td#t_11").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_4").select("td#th_11").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_5").select("td#t_12").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+                if(liste2[ii][3]=="u'11:00-12:00 10:00-12:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_3").select("td#th_10").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_4").select("td#th_11").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_4").select("td#t_11").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+                if(liste2[ii][3]=="u'12:00-14:00 12:00-14:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_5").select("td#t_12").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_6").select("td#t_13").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_5").select("td#th_12").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_6").select("td#th_13").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+                if(liste2[ii][3]=="u'12:00-13:00 12:00-14:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_5").select("td#t_12").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_5").select("td#th_12").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_6").select("td#th_13").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+                if(liste2[ii][3]=="u'15:00-17:00 16:00-17:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_8").select("td#t_15").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_9").select("td#t_16").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_9").select("td#th_16").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+                if(liste2[ii][3]=="u'15:00-17:00 15:00-16:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_8").select("td#t_15").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_9").select("td#t_16").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_8").select("td#th_15").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+                if(liste2[ii][3]=="u'17:00-18:00 16:00-18:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_10").select("td#t_17").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_9").select("td#t_16").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_10").select("td#th_17").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+                if(liste2[ii][3]=="u'16:00-17:00 16:00-18:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_9").select("td#th_16").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_9").select("td#t_16").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_10").select("td#t_17").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+                if(liste2[ii][3]=="u'09:00-11:00 09:00-10:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_2").select("td#t_9").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_3").select("td#t_10_").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_2").select("td#th_9").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+                if(liste2[ii][3]=="u'09:00-10:00 09:00-11:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_2").select("td#t_9").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_3").select("td#th_10_").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_2").select("td#th_9").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+                if(liste2[ii][3]=="u'10:00-12:00 11:00-12:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_3").select("td#t_10").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_4").select("td#t_11_").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_4").select("td#th_11").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+                if(liste2[ii][3]=="u'13:00-15:00 14:00-15:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_6").select("td#t_13").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_6").select("td#t_14").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_7").select("td#th_14").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+                if(liste2[ii][3]=="u'18:00-19:00 17:00-19:00'"){
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_11").select("td#t_18").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_10").select("td#th_17").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_11").select("td#th_18").append("text").text(liste2[ii][0].split("'")[1]+" ");
+                }
+            }
+            if(liste2[ii][2] == "u'Wednesday'") {
+                if (liste2[ii][3] == "u'09:00-12:00'") {
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_2").select("td#w_9").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_3").select("td#w_10").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_4").select("td#w_11").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                }
+                if (liste2[ii][3] == "u'12:00-15:00'") {
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_5").select("td#w_12").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_6").select("td#w_13").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_7").select("td#w_14").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                }
+                if (liste2[ii][3] == "u'11:00-13:00'") {
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_4").select("td#w_11").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_5").select("td#w_12").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                }
+            }
+            if(liste2[ii][2] == "u'Wednesday Friday'") {
+                if (liste2[ii][3] == "u'09:00-11:00 09:00-10:00'") {
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_2").select("td#w_9").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_3").select("td#w_10").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_2").select("td#f_9").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                }
+                if (liste2[ii][3] == "u'12:00-13:00 10:00-12:00'") {
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_5").select("td#w_12").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_3").select("td#f_10").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_4").select("td#f_11").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                }
+            }
+            if(liste2[ii][2] == "u'Monday Wednesday Friday'") {
+                if (liste2[ii][3] == "u'09:00-10:00 09:00-11:00 09:00-10:00'") {
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_2").select("td#m_9").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_2").select("td#w_9").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_3").select("td#w_10").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_2").select("td#f_9").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                }
+            }
+            if(liste2[ii][2] == "u'Monday'") {
+                if (liste2[ii][3] == "u'09:00-12:00'") {
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_2").select("td#m_9").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_3").select("td#m_10").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_4").select("td#m_11").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                }
+            }
+
+            if(liste2[ii][2] == "u'Tuesday'") {
+                if (liste2[ii][3] == "u'09:00-12:00'") {
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_2").select("td#t_9").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_3").select("td#t_10").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_4").select("td#t_11").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                }
+                if (liste2[ii][3] == "u'14:00-17:00'") {
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_7").select("td#t_14").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_8").select("td#t_15").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_9").select("td#t_16").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                }
+                if (liste2[ii][3] == "u'13:00-15:00'") {
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_6").select("td#t_13").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_7").select("td#t_14").append("text").text(liste2[ii][0].split("'")[1] + " ");
+
+                }
+
+            }
+            if(liste2[ii][2] == "u'Thursday'") {
+                if (liste2[ii][3] == "u'14:00-17:00'") {
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_7").select("td#th_14").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_8").select("td#th_15").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_9").select("td#th_16").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                }
+
+            }
+            if(liste2[ii][2] == "u'Friday'") {
+                if (liste2[ii][3] == "u'15:00-18:00'") {
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_8").select("td#f_15").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_9").select("td#f_16").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                    d3.select("body").select("div.tablo").select("table").select("tr.row_10").select("td#f_17").append("text").text(liste2[ii][0].split("'")[1] + " ");
+                }
+
+            }
+
+
+
+        }
+
+
+
+</script>
+</body>
+</html>
+{% endblock %}

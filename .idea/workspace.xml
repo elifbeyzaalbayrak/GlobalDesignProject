@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="686a3479-c06d-4d0c-bd36-508b7fc39b2b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/globaldjango/deneme.db" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/globaldjango/example.db" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/globaldjango/program2.db" afterPath="$PROJECT_DIR$/globaldjango/deneme.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/globaldjango/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/globaldjango/.idea/dataSources.ids" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/globaldjango/static/d3/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/globaldjango/static/d3/d3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/globaldjango/static/d3/d3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/globaldjango/templates/exyeni.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/globaldjango/templates/h4.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/globaldjango/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/globaldjango/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/globaldjango/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/globaldjango/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/globaldjango/.idea/workspace.xml" afterPath="$PROJECT_DIR$/globaldjango/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/globaldjango/gd/models.py" afterPath="$PROJECT_DIR$/globaldjango/gd/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/globaldjango/gd/views.py" afterPath="$PROJECT_DIR$/globaldjango/gd/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/globaldjango/static/css/h1.css" afterPath="$PROJECT_DIR$/globaldjango/static/css/h1.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/globaldjango/templates/base.html" afterPath="$PROJECT_DIR$/globaldjango/templates/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/globaldjango/templates/h3.html" afterPath="$PROJECT_DIR$/globaldjango/templates/h3.html" />
@@ -73,8 +69,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/globaldjango/gd/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7181818">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.88">
+              <caret line="95" column="74" selection-start-line="95" selection-start-column="74" selection-end-line="95" selection-end-column="74" />
               <folding>
                 <marker date="1450904571000" expanded="true" signature="240:256" placeholder="SELECT * FRO..cs..." />
                 <marker date="1450904571000" expanded="true" signature="416:432" placeholder="SELECT * FRO..ee..." />
@@ -118,9 +114,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="37" />
+    <option name="x" value="96" />
     <option name="y" value="23" />
-    <option name="width" value="1084" />
+    <option name="width" value="1171" />
     <option name="height" value="670" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -194,7 +190,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gd" />
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GlobalDesignProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GlobalDesignProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="globaldjango" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -225,6 +239,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/globaldjango" />
       <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\elifalbayrak\PycharmProjects\GlobalDesignProject" />
     </key>
@@ -497,33 +512,39 @@
       <option name="project" value="LOCAL" />
       <updated>1450824756343</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="taslak &#10;">
+      <created>1450904879020</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1450904879020</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="37" y="23" width="1084" height="670" extended-state="0" />
-    <editor active="true" />
+    <frame x="96" y="23" width="1171" height="670" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22648752" sideWeight="0.6440678" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21966343" sideWeight="0.6440678" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3564669" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917467" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.353719" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="0" y="284" width="1366" height="199" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973805" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990755" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.353719" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="0" y="284" width="1366" height="199" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990755" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -534,13 +555,101 @@
     <MESSAGE value="cs example" />
     <MESSAGE value="tables" />
     <MESSAGE value="taslak &#10;düzeltilmesi gereken yerler var!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="taslak &#10;düzeltilmesi gereken yerler var!!" />
+    <MESSAGE value="taslak &#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="taslak &#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="117" column="43" selection-start-line="117" selection-start-column="43" selection-end-line="117" selection-end-column="43" />
+          <folding>
+            <element signature="e#49#63#0" expanded="true" />
+            <element signature="e#166#3839#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/globaldjango/gd/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="95" column="74" selection-start-line="95" selection-start-column="74" selection-end-line="95" selection-end-column="74" />
+          <folding>
+            <marker date="1450904571000" expanded="true" signature="240:256" placeholder="SELECT * FRO..cs..." />
+            <marker date="1450904571000" expanded="true" signature="416:432" placeholder="SELECT * FRO..ee..." />
+            <marker date="1450904571000" expanded="true" signature="596:612" placeholder="SELECT * FRO..ie..." />
+            <marker date="1450904571000" expanded="true" signature="847:863" placeholder="SELECT * FRO..cs..." />
+            <marker date="1450904571000" expanded="true" signature="1023:1039" placeholder="SELECT * FRO..ee..." />
+            <marker date="1450904571000" expanded="true" signature="1203:1219" placeholder="SELECT * FRO..ie..." />
+            <marker date="1450904571000" expanded="true" signature="1677:1693" placeholder="SELECT * FRO..cs..." />
+            <marker date="1450904571000" expanded="true" signature="1857:1873" placeholder="SELECT * FRO..ee..." />
+            <marker date="1450904571000" expanded="true" signature="2041:2057" placeholder="SELECT * FRO..ie..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="117" column="43" selection-start-line="117" selection-start-column="43" selection-end-line="117" selection-end-column="43" />
+          <folding>
+            <element signature="e#49#63#0" expanded="true" />
+            <element signature="e#166#3839#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/globaldjango/gd/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1450904571000" expanded="true" signature="240:256" placeholder="SELECT * FRO..cs..." />
+            <marker date="1450904571000" expanded="true" signature="416:432" placeholder="SELECT * FRO..ee..." />
+            <marker date="1450904571000" expanded="true" signature="596:612" placeholder="SELECT * FRO..ie..." />
+            <marker date="1450904571000" expanded="true" signature="847:863" placeholder="SELECT * FRO..cs..." />
+            <marker date="1450904571000" expanded="true" signature="1023:1039" placeholder="SELECT * FRO..ee..." />
+            <marker date="1450904571000" expanded="true" signature="1203:1219" placeholder="SELECT * FRO..ie..." />
+            <marker date="1450904571000" expanded="true" signature="1677:1693" placeholder="SELECT * FRO..cs..." />
+            <marker date="1450904571000" expanded="true" signature="1857:1873" placeholder="SELECT * FRO..ee..." />
+            <marker date="1450904571000" expanded="true" signature="2041:2057" placeholder="SELECT * FRO..ie..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="117" column="43" selection-start-line="117" selection-start-column="43" selection-end-line="117" selection-end-column="43" />
+          <folding>
+            <element signature="e#49#63#0" expanded="true" />
+            <element signature="e#166#3839#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/globaldjango/gd/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1450904571000" expanded="true" signature="240:256" placeholder="SELECT * FRO..cs..." />
+            <marker date="1450904571000" expanded="true" signature="416:432" placeholder="SELECT * FRO..ee..." />
+            <marker date="1450904571000" expanded="true" signature="596:612" placeholder="SELECT * FRO..ie..." />
+            <marker date="1450904571000" expanded="true" signature="847:863" placeholder="SELECT * FRO..cs..." />
+            <marker date="1450904571000" expanded="true" signature="1023:1039" placeholder="SELECT * FRO..ee..." />
+            <marker date="1450904571000" expanded="true" signature="1203:1219" placeholder="SELECT * FRO..ie..." />
+            <marker date="1450904571000" expanded="true" signature="1677:1693" placeholder="SELECT * FRO..cs..." />
+            <marker date="1450904571000" expanded="true" signature="1857:1873" placeholder="SELECT * FRO..ee..." />
+            <marker date="1450904571000" expanded="true" signature="2041:2057" placeholder="SELECT * FRO..ie..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/example.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -630,8 +739,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/globaldjango/gd/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7181818">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.88">
+          <caret line="95" column="74" selection-start-line="95" selection-start-column="74" selection-end-line="95" selection-end-column="74" />
           <folding>
             <marker date="1450904571000" expanded="true" signature="240:256" placeholder="SELECT * FRO..cs..." />
             <marker date="1450904571000" expanded="true" signature="416:432" placeholder="SELECT * FRO..ee..." />
